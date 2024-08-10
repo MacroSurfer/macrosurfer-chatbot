@@ -36,24 +36,24 @@ export function ChatPanel({
 
   const exampleMessages = [
     {
-      heading: 'What are the',
-      subheading: 'trending memecoins today?',
-      message: `What are the trending memecoins today?`
+      heading: 'What are',
+      subheading: 'economic events this week?',
+      message: `What are economic events this week?`
     },
     {
-      heading: 'What is the price of',
-      subheading: '$DOGE right now?',
-      message: 'What is the price of $DOGE right now?'
+      heading: 'What is',
+      subheading: 'the economic calendar in US?',
+      message: 'What is the economic calendar in US?'
     },
     {
-      heading: 'I would like to buy',
-      subheading: '42 $DOGE',
-      message: `I would like to buy 42 $DOGE`
+      heading: 'What is',
+      subheading: 'the definition of CPI?',
+      message: `What is the definition of CPI?`
     },
     {
-      heading: 'What are some',
-      subheading: `recent events about $DOGE?`,
-      message: `What are some recent events about $DOGE?`
+      heading: 'What are',
+      subheading: `historic values of US PMI?`,
+      message: `What are historic values of US PMI?`
     }
   ]
 
