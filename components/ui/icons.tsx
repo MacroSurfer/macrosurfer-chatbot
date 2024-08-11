@@ -104,6 +104,12 @@ function IconOpenAI({ className, ...props }: React.ComponentProps<'svg'>) {
   )
 }
 
+function IconMacrosurfer({ width, height, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <img src="image.svg" alt="My SVG" width={width} height={height} />
+  )
+}
+
 function IconVercel({ className, ...props }: React.ComponentProps<'svg'>) {
   return (
     <svg
@@ -503,5 +509,6 @@ export {
   IconShare,
   IconUsers,
   IconExternalLink,
-  IconChevronUpDown
+  IconChevronUpDown,
+  IconMacrosurfer
 }

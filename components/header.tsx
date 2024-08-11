@@ -7,6 +7,7 @@ import { Button, buttonVariants } from '@/components/ui/button'
 import {
   IconGitHub,
   IconNextChat,
+  IconMacrosurfer,
   IconSeparator,
   IconVercel
 } from '@/components/ui/icons'
@@ -29,8 +30,8 @@ async function UserOrLogin() {
         </>
       ) : (
         <Link href="/new" rel="nofollow">
-          <IconNextChat className="size-6 mr-2 dark:hidden" inverted />
-          <IconNextChat className="hidden size-6 mr-2 dark:block" />
+          {/* <IconMacrosurfer className="size-6 mr-2 dark:hidden" inverted /> */}
+          <IconMacrosurfer width="25" height="25" />
         </Link>
       )}
       <div className="flex items-center">
