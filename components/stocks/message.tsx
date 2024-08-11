@@ -1,6 +1,6 @@
 'use client'
 
-import { IconOpenAI, IconUser } from '@/components/ui/icons'
+import { IconOpenAI, IconUser, IconMacrosurfer } from '@/components/ui/icons'
 import { cn } from '@/lib/utils'
 import { spinner } from './spinner'
 import { CodeBlock } from '../ui/codeblock'
@@ -101,7 +101,7 @@ export function BotCard({
           !showAvatar && 'invisible'
         )}
       >
-        <IconOpenAI />
+        <IconMacrosurfer width="22" height="22" />
       </div>
       <div className="ml-4 flex-1 pl-2">{children}</div>
     </div>

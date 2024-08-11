@@ -504,7 +504,7 @@ async function submitUserMessage(content: string) {
 
   return {
     id: nanoid(),
-    display: <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+    display: <BotCard><div dangerouslySetInnerHTML={{ __html: htmlContent }} /></BotCard>
   }
 }
 
