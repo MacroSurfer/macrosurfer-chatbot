@@ -59,7 +59,7 @@ export function Header() {
       <div className="flex items-center justify-end space-x-2">
         <a
           target="_blank"
-          href="https://github.com/MacroSurfer/macrosurfer-chatbot"
+          href="https://github.com/MacroSurfer/MacroSurferFunctions"
           rel="noopener noreferrer"
           className={cn(buttonVariants({ variant: 'outline' }))}
         >
@@ -72,8 +72,8 @@ export function Header() {
           className={cn(buttonVariants())}
         >
           <IconVercel className="mr-2" />
-          <span className="hidden sm:block">Back to Macrosurfer App</span>
-          <span className="sm:hidden">Back to App</span>
+          <span className="hidden sm:block">Back to main page</span>
+          <span className="sm:hidden">Back to home page</span>
         </a>
       </div>
     </header>
