@@ -64,9 +64,20 @@ export function Header() {
           className={cn(buttonVariants({ variant: 'outline' }))}
         >
           <IconGitHub />
-          <span className="hidden ml-2 md:flex">GitHub</span>
+          <span className="hidden ml-2 md:flex">Agent Repo</span>
         </a>
+
         <a
+          target="_blank"
+          href="https://github.com/MacroSurfer/macrosurfer-chatbot"
+          rel="noopener noreferrer"
+          className={cn(buttonVariants({ variant: 'outline' }))}
+        >
+          <IconGitHub />
+          <span className="hidden ml-2 md:flex">Chatbot Repo</span>
+        </a>
+
+        {/* <a
           href="https://app.macrosurfer.com/dashboard"
           target="_blank"
           className={cn(buttonVariants())}
@@ -74,7 +85,7 @@ export function Header() {
           <IconVercel className="mr-2" />
           <span className="hidden sm:block">Back to main page</span>
           <span className="sm:hidden">Back to home page</span>
-        </a>
+        </a> */}
       </div>
     </header>
   )
