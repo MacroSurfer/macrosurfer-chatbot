@@ -46,13 +46,13 @@ export function ChatPanel({
       message: 'What is the economic calendar in US?'
     },
     {
-      heading: 'What is',
-      subheading: 'the definition of CPI?',
+      heading: 'CPI',
+      subheading: 'The definition of CPI?',
       message: `What is the definition of CPI?`
     },
     {
-      heading: 'What are',
-      subheading: `historic values of US PMI?`,
+      heading: 'History',
+      subheading: `Values of US PMI?`,
       message: `What are historic values of US PMI?`
     }
   ]

@@ -49,7 +49,7 @@ export function Chat({ id, className, session, missingKeys }: ChatProps) {
 
   useEffect(() => {
     missingKeys.map(key => {
-      toast.error(`Missing ${key} environment variable!`)
+      // toast.error(`Missing ${key} environment variable!`)
     })
   }, [missingKeys])
 

@@ -490,13 +490,13 @@ async function submitUserMessage(content: string) {
   //   }
   // })
 
-  const response = await fetch('https://chat-aqpgfrzbra-uc.a.run.app/chat', {
+  const response = await fetch('https://chat-rozzd6eg5q-uc.a.run.app/chat', {
     method: 'POST',
     mode: 'cors',
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ user_question: content }),
+    body: JSON.stringify({ question: content }),
   });
 
   const data = await response.text();
