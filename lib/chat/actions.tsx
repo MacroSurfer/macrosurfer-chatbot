@@ -500,11 +500,11 @@ async function submitUserMessage(content: string) {
   });
 
   const data = await response.text();
-  const htmlContent = await markdownToHtml(data);
+  // const htmlContent = await markdownToHtml(data);
 
   return {
     id: nanoid(),
-    display: <BotCard><div dangerouslySetInnerHTML={{ __html: htmlContent }} /></BotCard>
+    display: <BotCard><div dangerouslySetInnerHTML={{ __html: data }} /></BotCard>
   }
 }
 

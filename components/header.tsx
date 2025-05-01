@@ -39,9 +39,11 @@ async function UserOrLogin() {
         {session?.user ? (
           <UserMenu user={session.user} />
         ) : (
-          <Button variant="link" asChild className="-ml-2">
-            <Link href="/login">Login</Link>
-          </Button>
+          // TODO: Add login button
+          // <Button variant="link" asChild className="-ml-2">
+          //   <Link href="/login">Login</Link>
+          // </Button>
+          <></>
         )}
       </div>
     </>
