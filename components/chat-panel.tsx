@@ -11,6 +11,7 @@ import { useAIState, useActions, useUIState } from 'ai/rsc'
 import type { AI } from '@/lib/chat/actions'
 import { nanoid } from 'nanoid'
 import { UserMessage } from './stocks/message'
+import { SpinnerMessage } from '@/components/stocks/message'
 
 export interface ChatPanelProps {
   id?: string
@@ -38,22 +39,22 @@ export function ChatPanel({
     {
       heading: 'What are',
       subheading: 'economic events this week?',
-      message: `What are economic events this week?`
+      message: `What are economic events this week in the US with high impact?`
     },
     {
       heading: 'What is',
       subheading: 'the economic calendar in US?',
-      message: 'What is the economic calendar in US?'
+      message: 'What are some economic events in US this week?'
     },
     {
-      heading: 'CPI',
-      subheading: 'The definition of CPI?',
-      message: `What is the definition of CPI?`
+      heading: 'Inflation Rate',
+      subheading: 'in the US from the past 3 months?',
+      message: `What is the events in the US that starts with Inflation Rate in the past 3 months with high importance?`
     },
     {
       heading: 'History',
       subheading: `Values of US PMI?`,
-      message: `What are historic values of US PMI?`
+      message: `What are historic values of US PMI in the past 3 months?`
     }
   ]
 
@@ -82,9 +83,24 @@ export function ChatPanel({
                     }
                   ])
 
+                  const loadingMessageId = nanoid();
+                  setMessages(currentMessages => [
+                    ...currentMessages,
+                    {
+                      id: loadingMessageId,
+                      display: <SpinnerMessage />
+                    }
+                  ]);
+
                   const responseMessage = await submitUserMessage(
                     example.message
                   )
+
+                  setMessages(currentMessages =>
+                    currentMessages.filter(
+                      message => message.id !== loadingMessageId
+                    )
+                  );
 
                   setMessages(currentMessages => [
                     ...currentMessages,
